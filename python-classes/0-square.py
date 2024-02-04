@@ -4,6 +4,6 @@
 
 class Square:
 
-"""Empty block"""
+    """Empty block"""
 
     pass
