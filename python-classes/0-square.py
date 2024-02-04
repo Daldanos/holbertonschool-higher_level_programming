@@ -6,6 +6,7 @@ Classes:
     - Square
 """
 
+
 class Square:
 
     """This class defines a square."""
