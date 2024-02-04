@@ -8,6 +8,6 @@ Classes:
 
 class Square:
 
-    """Empty block."""
+    """This class defines a square."""
 
     pass
