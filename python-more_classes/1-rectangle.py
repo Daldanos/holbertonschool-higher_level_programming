@@ -9,7 +9,7 @@ Define a class Rectangle.
 class Rectangle:
     """Define a rectangle"""
     def __init__(self, width=0, height=0):
-        self.widht = width
+        self.width = width
         self.height = height
 
     @property
