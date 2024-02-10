@@ -9,6 +9,7 @@ Define a class Rectangle.
 class Rectangle:
     """Define a rectangle"""
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -52,10 +53,7 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        rectangle_str = ""
-        for i in range(self.__height):
-            rectangle_str += "#" * self.__width + "\n"
-        return rectangle_str.rstrip()
+        return ((str(self.print_symbol) * self.__width + "\n") * self.__height).rstrip()
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
