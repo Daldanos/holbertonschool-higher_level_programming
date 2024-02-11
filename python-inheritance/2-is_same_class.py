@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""
-
-Function to check if is the same class.
-
-"""
+"""Function to check if is the same class"""
 
 
 def is_same_class(obj, a_class):
-    """Check object-class.
+    """
+    Check object-class.
 
     Args:
         obj: To check.
