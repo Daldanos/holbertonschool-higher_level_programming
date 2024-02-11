@@ -3,13 +3,5 @@
 
 
 def is_same_class(obj, a_class):
-    """
-    Check object-class.
-
-    Args:
-        obj: To check.
-        a_class: The class.
-    Returns:
-        True or false
-    """
+    """Check object-clas    """
     return type(obj) == a_class
