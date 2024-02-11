@@ -1,0 +1,12 @@
+# Test MyList
+from 1-my_list import MyList
+
+# Try
+my_list = MyList([8, 5, 9, 3, 2])
+
+# Original list
+print("Original List:", my_list)
+
+# Sorted list
+print("Sorted List:")
+my_list.print_sorted()
