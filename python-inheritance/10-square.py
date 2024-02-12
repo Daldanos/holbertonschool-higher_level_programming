@@ -8,6 +8,7 @@ Class Rectangle
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Square(Rectangle):
     def __init__(self, size):
         super().__init__(size, size)
