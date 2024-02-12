@@ -5,6 +5,8 @@ JSON writing
 
 """
 
+import json
+
 
 def save_to_json_file(my_obj, filename):
     """write to a file"""
