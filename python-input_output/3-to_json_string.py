@@ -5,6 +5,8 @@ JSON representation of an object
 
 """
 
+import json
+
 
 def to_json_string(my_obj):
     """function to return a JSON of an object"""
