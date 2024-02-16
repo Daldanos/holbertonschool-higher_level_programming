@@ -2,7 +2,7 @@
 """
 Define a Rectangle Class
 """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -28,11 +28,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nj_objects
+        super().__init__(id)
 
     @property
     def width(self):
