@@ -61,12 +61,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
-        if cls.__name__ == "Rectangle":
-            dummy_instance = Rectangle(4, 3)
-        elif cls.__name__ == "Square":
-            dummy_instance = Square(5)
-        else:
-            raise ValueError("Not a existent class")
-
-        dummy_instance.update(**dictioary)
-        return dummy_instance
+        if dictionary and dictionary != {}:
+            if cls.__name__ == "Rectangle":
+                dummy = cls(2, 3)
+            else:
+                dummy = cls(1)
+            dummy.update(**dictionary)
+            return dummy
