@@ -57,3 +57,16 @@ class Base:
         for key, value in dictionary.items():
             setattr(instance, key, value)
         return instance
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+        if cls.__name__ == "Rectangle":
+            dummy_instance = Rectangle(4, 3)
+        elif cls.__name__ == "Square":
+            dummy_instance = Square(5)
+        else:
+            raise ValueError("Not a existent class")
+
+        dummy_instance.update(**dictioary)
+        return dummy_instance
