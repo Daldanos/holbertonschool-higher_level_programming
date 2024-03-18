@@ -3,8 +3,7 @@
 Deffine Base Class
 """
 import json
-import csv
-import turtle
+import turtle as t
 
 
 class Base:
@@ -81,3 +80,8 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """opens a window and draws all the Rectangles and Squares"""
+        
